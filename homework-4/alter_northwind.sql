@@ -1,4 +1,5 @@
 -- Подключиться к БД Northwind и сделать следующие изменения:
+
 -- 1. Добавить ограничение на поле unit_price таблицы products (цена должна быть больше 0)
 ALTER TABLE products
 ADD CONSTRAINT chk_unit_price_positive CHECK (unit_price > 0);
